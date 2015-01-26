@@ -4,11 +4,16 @@
   <meta charset="utf-8">
   <title>Ssssnake!</title>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="/css/snake.css.scss">
+  <link rel="stylesheet" type="text/css" href="css/snake.css.scss">
+	 <script src="js/vendor/jquery-2.1.1.js"></script>
+		<script src="js/vendor/modernizr.js"></script>
+		<script src="js/snake.js"></script>
+		<script src="js/snake-view.js"></script>
+
 </head>
 <body>
 	
-	<h1>Gotta Catch 'Em All <img src="../assets/pokeball.png" class="logo"></h1>
+	<h1>Gotta Catch 'Em All <img src="assets/pokeball.png" class="logo"></h1>
 	
 	<div class="main group">
 		<div class="board"></div>
@@ -19,13 +24,11 @@
 	</div>
   
 
-  <script src="/js/vendor/jquery-2.1.1.js"></script>
-	<script src="/js/vendor/modernizr.js"></script>
-  <script src="/js/snake.js"></script>
-  <script src="/js/snake-view.js"></script>
-
   <script>
-    var view = new SnakeGame.View($('.board'));
+		$(function(){
+			var view = new SnakeGame.View($('.board'));
+		});
+    
   </script>
 </body>
 </html>
